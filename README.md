@@ -1,4 +1,4 @@
-# ☕ c Masterclass — Enhanced Edition
+#  c Masterclass — Enhanced Edition
 
 ## Features
 - 📜 **22 Chapters** — Introduction to Interfaces
