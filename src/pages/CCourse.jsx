@@ -182,17 +182,17 @@ export default function CCourse() {
 
               {/* Title text */}
               <SlideItem delay={0.18}>
-                <p style={{ 
-                  fontSize: 'clamp(1.4rem, 8vw, 2.4rem)', fontWeight: 900, letterSpacing: 'clamp(0.1em, 2vw, 0.40em)', 
-                  color: '#38bdf8', textTransform: 'uppercase', marginBottom: 6, textShadow: '0 0 32px rgba(14,165,233,0.85)', 
-                  width: '100%', padding: '0 10px' 
+                <p style={{
+                  fontSize: 'clamp(1.4rem, 8vw, 2.4rem)', fontWeight: 900, letterSpacing: 'clamp(0.1em, 2vw, 0.40em)',
+                  color: '#38bdf8', textTransform: 'uppercase', marginBottom: 6, textShadow: '0 0 32px rgba(14,165,233,0.85)',
+                  width: '100%', padding: '0 10px'
                 }}>
                   C Programming
                 </p>
-                <p style={{ 
-                  fontSize: 'clamp(0.8rem, 4vw, 1.2rem)', fontWeight: 800, letterSpacing: 'clamp(0.2em, 5vw, 0.60em)', 
-                  color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 20, textShadow: '0 0 20px rgba(125,211,252,0.70)', 
-                  width: '100%', padding: '0 10px' 
+                <p style={{
+                  fontSize: 'clamp(0.8rem, 4vw, 1.2rem)', fontWeight: 800, letterSpacing: 'clamp(0.2em, 5vw, 0.60em)',
+                  color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 20, textShadow: '0 0 20px rgba(125,211,252,0.70)',
+                  width: '100%', padding: '0 10px'
                 }}>
                   Masterclass
                 </p>
@@ -1653,37 +1653,37 @@ int main() {
                           switch(day)
                         </motion.div>
                         <div className="space-y-1">
-                        {[
-                          { case: 1, value: "Monday", matched: false },
-                          { case: 2, value: "Tuesday", matched: false },
-                          { case: 3, value: "Wednesday", matched: true },
-                          { case: 4, value: "Thursday", matched: false },
-                          { case: 5, value: "Friday", matched: false }
-                        ].map((item, idx) => (
-                          <motion.div
-                            key={idx}
-                            initial={{ x: -10, opacity: 0.5 }}
-                            animate={item.matched ? { x: [0, 5, 0], backgroundColor: '#22c55e' } : { x: 0 }}
-                            transition={{ repeat: item.matched ? Infinity : 0, duration: 1.5, delay: idx * 0.2 }}
-                            className={`flex items-center gap-2 p-1 rounded ${item.matched ? 'bg-green-500/30' : ''}`}
-                          >
-                            <div className="w-12 text-right">case {item.case}:</div>
-                            <div className="text-blue-200">{item.value}</div>
-                            {item.matched && (
-                              <motion.div
-                                animate={{ x: [0, 5, 0] }}
-                                transition={{ repeat: Infinity, duration: 1 }}
-                                className="text-green-400 text-sm"
-                              >
-                                ← MATCH! break
-                              </motion.div>
-                            )}
-                            {!item.matched && idx < 2 && (
-                              <div className="text-gray-500 text-xs">↓ fall-through (if no break)</div>
-                            )}
-                          </motion.div>
-                        ))}
-                      </div>
+                          {[
+                            { case: 1, value: "Monday", matched: false },
+                            { case: 2, value: "Tuesday", matched: false },
+                            { case: 3, value: "Wednesday", matched: true },
+                            { case: 4, value: "Thursday", matched: false },
+                            { case: 5, value: "Friday", matched: false }
+                          ].map((item, idx) => (
+                            <motion.div
+                              key={idx}
+                              initial={{ x: -10, opacity: 0.5 }}
+                              animate={item.matched ? { x: [0, 5, 0], backgroundColor: '#22c55e' } : { x: 0 }}
+                              transition={{ repeat: item.matched ? Infinity : 0, duration: 1.5, delay: idx * 0.2 }}
+                              className={`flex items-center gap-2 p-1 rounded ${item.matched ? 'bg-green-500/30' : ''}`}
+                            >
+                              <div className="w-12 text-right">case {item.case}:</div>
+                              <div className="text-blue-200">{item.value}</div>
+                              {item.matched && (
+                                <motion.div
+                                  animate={{ x: [0, 5, 0] }}
+                                  transition={{ repeat: Infinity, duration: 1 }}
+                                  className="text-green-400 text-sm"
+                                >
+                                  ← MATCH! break
+                                </motion.div>
+                              )}
+                              {!item.matched && idx < 2 && (
+                                <div className="text-gray-500 text-xs">↓ fall-through (if no break)</div>
+                              )}
+                            </motion.div>
+                          ))}
+                        </div>
                       </div>
                       <div className="mt-2 text-center text-xs text-gray-400 min-w-max">
                         Break exits switch, preventing fall-through
@@ -3847,7 +3847,7 @@ After change: 200 */`}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                   <div className="space-y-4">
                     <p className="text-blue-200 text-lg"><strong>Theory:</strong> A pointer that points to a memory location that has been freed or deallocated. Accessing a dangling pointer causes undefined behavior (programs crash or memory corruption).</p>
-                    
+
                     <h4 className="text-rose-300 font-bold mt-4">Common Causes:</h4>
                     <ul className="list-disc list-inside text-blue-200 space-y-2 text-base">
                       <li>Freeing memory but pointer still holds the address</li>
@@ -5874,9 +5874,9 @@ int main() {
               </p>
             </SlideItem>
             <SlideItem delay={0.4}>
-              <div style={{ 
-                display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 12, 
-                marginBottom: 40, maxWidth: '100%', width: 'auto', padding: '0 16px' 
+              <div style={{
+                display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 12,
+                marginBottom: 40, maxWidth: '100%', width: 'auto', padding: '0 16px'
               }}>
                 {['Variables ✓', 'Pointers ✓', 'Arrays ✓', 'Strings ✓', 'Functions ✓', 'Structs ✓', 'Memory ✓', 'Files ✓', 'Recursion ✓'].map(b => (
                   <motion.span key={b} whileHover={{ scale: 1.10, y: -3 }} whileTap={{ scale: 0.92 }}
