@@ -58,9 +58,9 @@ export default function Slide({ children, className = '', id, style }) {
     <section
       id={id}
       style={{ minHeight: '100vh', width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}
-      className={`p-6 md:p-12 lg:p-24 relative overflow-hidden ${className}`}
+      className={`p-4 sm:p-8 md:p-12 lg:p-24 relative overflow-hidden ${className}`}
     >
-      <div className="w-full max-w-6xl mx-auto flex flex-col items-center text-center relative z-10">
+      <div className="w-full max-w-6xl mx-auto flex flex-col items-center text-center relative z-10 px-0 sm:px-4">
         {children}
       </div>
     </section>
