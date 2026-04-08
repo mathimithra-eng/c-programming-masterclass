@@ -2636,9 +2636,9 @@ int main() {
                     </div>
 
                     {/* Animated 2D Array Visualization */}
-                    <div className="mt-4 bg-black/30 rounded-lg p-4 overflow-x-auto">
-                      <div className="text-center text-purple-300 text-sm mb-2">2D Array Matrix Visualization (Animated)</div>
-                      <div className="space-y-2">
+                    <div className="mt-4 bg-black/30 rounded-lg p-4 overflow-x-auto custom-scrollbar">
+                      <div className="text-center text-purple-300 text-sm mb-4">2D Array Matrix Visualization (Animated)</div>
+                      <div className="space-y-3 min-w-[300px]">
                         {[[1, 2, 3], [4, 5, 6]].map((row, i) => (
                           <motion.div
                             key={i}
@@ -2726,9 +2726,9 @@ int main() {
                     </div>
 
                     {/* Animated 3D Array Visualization */}
-                    <div className="mt-4 bg-black/30 rounded-lg p-4 overflow-x-auto">
-                      <div className="text-center text-emerald-300 text-sm mb-2">3D Array Cube Visualization (Animated)</div>
-                      <div className="space-y-3">
+                    <div className="mt-4 bg-black/30 rounded-lg p-4 overflow-x-auto custom-scrollbar">
+                      <div className="text-center text-emerald-300 text-sm mb-4">3D Array Cube Visualization (Animated)</div>
+                      <div className="space-y-4 min-w-[300px]">
                         {[0, 1].map((depth) => (
                           <motion.div
                             key={depth}
@@ -2949,12 +2949,12 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-green-300 mb-4">📝 String & Character Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-green-500/10 rounded-lg transition-all">
-                    <code className="text-green-300 font-mono text-lg min-w-[120px]">string.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-green-500/10 rounded-lg transition-all">
+                    <code className="text-green-300 font-mono text-lg min-w-[120px] w-fit">string.h</code>
                     <p className="text-green-200 text-base">String manipulation - provides strlen, strcpy, strcat, strcmp, strchr, strstr</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-green-500/10 rounded-lg transition-all">
-                    <code className="text-green-300 font-mono text-lg min-w-[120px]">ctype.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-green-500/10 rounded-lg transition-all">
+                    <code className="text-green-300 font-mono text-lg min-w-[120px] w-fit">ctype.h</code>
                     <p className="text-green-200 text-base">Character handling - provides isalpha, isdigit, isspace, toupper, tolower</p>
                   </div>
                 </div>
@@ -2964,20 +2964,20 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-orange-300 mb-4">📐 Mathematics Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
-                    <code className="text-orange-300 font-mono text-lg min-w-[120px]">math.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
+                    <code className="text-orange-300 font-mono text-lg min-w-[120px] w-fit">math.h</code>
                     <p className="text-orange-200 text-base">Mathematical functions - provides sqrt, pow, sin, cos, tan, log, exp, floor, ceil</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
-                    <code className="text-orange-300 font-mono text-lg min-w-[120px]">complex.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
+                    <code className="text-orange-300 font-mono text-lg min-w-[120px] w-fit">complex.h</code>
                     <p className="text-orange-200 text-base">Complex number arithmetic - provides complex types and functions (C99)</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
-                    <code className="text-orange-300 font-mono text-lg min-w-[120px]">tgmath.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
+                    <code className="text-orange-300 font-mono text-lg min-w-[120px] w-fit">tgmath.h</code>
                     <p className="text-orange-200 text-base">Type-generic math functions - automatically selects correct math function based on argument type</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
-                    <code className="text-orange-300 font-mono text-lg min-w-[120px]">fenv.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-orange-500/10 rounded-lg transition-all">
+                    <code className="text-orange-300 font-mono text-lg min-w-[120px] w-fit">fenv.h</code>
                     <p className="text-orange-200 text-base">Floating-point environment - controls rounding modes and floating-point exceptions</p>
                   </div>
                 </div>
@@ -2987,21 +2987,29 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-cyan-300 mb-4">💾 Memory & Utility Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
-                    <code className="text-cyan-300 font-mono text-lg min-w-[120px]">stdlib.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
+                    <code className="text-cyan-300 font-mono text-lg min-w-[120px] w-fit">stdlib.h</code>
                     <p className="text-cyan-200 text-base">General utilities - provides malloc, free, rand, srand, atoi, exit, qsort, abs</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
-                    <code className="text-cyan-300 font-mono text-lg min-w-[120px]">stddef.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
+                    <code className="text-cyan-300 font-mono text-lg min-w-[120px] w-fit">stddef.h</code>
                     <p className="text-cyan-200 text-base">Common definitions - provides size_t, ptrdiff_t, NULL, offsetof</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
-                    <code className="text-cyan-300 font-mono text-lg min-w-[120px]">stdint.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
+                    <code className="text-cyan-300 font-mono text-lg min-w-[120px] w-fit">stdint.h</code>
                     <p className="text-cyan-200 text-base">Fixed-width integer types - provides int32_t, uint64_t, intptr_t (C99)</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
-                    <code className="text-cyan-300 font-mono text-lg min-w-[120px]">inttypes.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
+                    <code className="text-cyan-300 font-mono text-lg min-w-[120px] w-fit">inttypes.h</code>
                     <p className="text-cyan-200 text-base">Format conversion for fixed-width integers - provides PRId32, SCNd64 macros</p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
+                    <code className="text-cyan-300 font-mono text-lg min-w-[120px] w-fit">limits.h</code>
+                    <p className="text-cyan-200 text-base">Integer limits - provides constants for min/max values of char, int, long, etc.</p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-cyan-500/10 rounded-lg transition-all">
+                    <code className="text-cyan-300 font-mono text-lg min-w-[120px] w-fit">float.h</code>
+                    <p className="text-cyan-200 text-base">Floating-point limits - provides constants for float/double precision, range, and epsilon</p>
                   </div>
                 </div>
               </div>
@@ -3010,8 +3018,8 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-teal-300 mb-4">⏰ Date & Time Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-teal-500/10 rounded-lg transition-all">
-                    <code className="text-teal-300 font-mono text-lg min-w-[120px]">time.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-teal-500/10 rounded-lg transition-all">
+                    <code className="text-teal-300 font-mono text-lg min-w-[120px] w-fit">time.h</code>
                     <p className="text-teal-200 text-base">Date and time functions - provides time, clock, difftime, localtime, gmtime, strftime</p>
                   </div>
                 </div>
@@ -3021,16 +3029,16 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-rose-300 mb-4">⚠️ Error & Diagnostics Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-rose-500/10 rounded-lg transition-all">
-                    <code className="text-rose-300 font-mono text-lg min-w-[120px]">assert.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-rose-500/10 rounded-lg transition-all">
+                    <code className="text-rose-300 font-mono text-lg min-w-[120px] w-fit">assert.h</code>
                     <p className="text-rose-200 text-base">Runtime assertion checking - provides assert macro for debugging</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-rose-500/10 rounded-lg transition-all">
-                    <code className="text-rose-300 font-mono text-lg min-w-[120px]">errno.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-rose-500/10 rounded-lg transition-all">
+                    <code className="text-rose-300 font-mono text-lg min-w-[120px] w-fit">errno.h</code>
                     <p className="text-rose-200 text-base">Error number handling - provides errno variable and perror function</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-rose-500/10 rounded-lg transition-all">
-                    <code className="text-rose-300 font-mono text-lg min-w-[120px]">setjmp.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-rose-500/10 rounded-lg transition-all">
+                    <code className="text-rose-300 font-mono text-lg min-w-[120px] w-fit">setjmp.h</code>
                     <p className="text-rose-200 text-base">Non-local jumps - provides setjmp and longjmp for error handling and exception simulation</p>
                   </div>
                 </div>
@@ -3040,12 +3048,12 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-amber-300 mb-4">⚙️ Signal & Process Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-amber-500/10 rounded-lg transition-all">
-                    <code className="text-amber-300 font-mono text-lg min-w-[120px]">signal.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-amber-500/10 rounded-lg transition-all">
+                    <code className="text-amber-300 font-mono text-lg min-w-[120px] w-fit">signal.h</code>
                     <p className="text-amber-200 text-base">Signal handling - provides signal and raise for handling interrupts and events</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-amber-500/10 rounded-lg transition-all">
-                    <code className="text-amber-300 font-mono text-lg min-w-[120px]">locale.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-amber-500/10 rounded-lg transition-all">
+                    <code className="text-amber-300 font-mono text-lg min-w-[120px] w-fit">locale.h</code>
                     <p className="text-amber-200 text-base">Localization functions - provides setlocale and localeconv for regional settings</p>
                   </div>
                 </div>
@@ -3055,13 +3063,17 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-indigo-300 mb-4">🌐 Wide Character & Unicode Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-indigo-500/10 rounded-lg transition-all">
-                    <code className="text-indigo-300 font-mono text-lg min-w-[120px]">wchar.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-indigo-500/10 rounded-lg transition-all">
+                    <code className="text-indigo-300 font-mono text-lg min-w-[120px] w-fit">wchar.h</code>
                     <p className="text-indigo-200 text-base">Wide character handling - provides wprintf, wcscpy, wcslen, wcscmp for Unicode strings</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-indigo-500/10 rounded-lg transition-all">
-                    <code className="text-indigo-300 font-mono text-lg min-w-[120px]">wctype.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-indigo-500/10 rounded-lg transition-all">
+                    <code className="text-indigo-300 font-mono text-lg min-w-[120px] w-fit">wctype.h</code>
                     <p className="text-indigo-200 text-base">Wide character classification - provides iswalpha, towupper, towlower for wide characters</p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-indigo-500/10 rounded-lg transition-all">
+                    <code className="text-indigo-300 font-mono text-lg min-w-[120px] w-fit">uchar.h</code>
+                    <p className="text-indigo-200 text-base">Unicode character handling - provides types and functions for 16/32-bit Unicode chars (C11)</p>
                   </div>
                 </div>
               </div>
@@ -3070,20 +3082,24 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-emerald-300 mb-4">🔧 Boolean & Variadic Libraries</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
-                    <code className="text-emerald-300 font-mono text-lg min-w-[120px]">stdbool.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
+                    <code className="text-emerald-300 font-mono text-lg min-w-[120px] w-fit">stdbool.h</code>
                     <p className="text-emerald-200 text-base">Boolean type - provides bool, true, false constants (C99)</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
-                    <code className="text-emerald-300 font-mono text-lg min-w-[120px]">stdarg.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
+                    <code className="text-emerald-300 font-mono text-lg min-w-[120px] w-fit">stdarg.h</code>
                     <p className="text-emerald-200 text-base">Variable argument lists - provides va_start, va_arg, va_end for functions with variable arguments</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
-                    <code className="text-emerald-300 font-mono text-lg min-w-[120px]">stdalign.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
+                    <code className="text-emerald-300 font-mono text-lg min-w-[120px] w-fit">iso646.h</code>
+                    <p className="text-emerald-200 text-base">Alternative operator spellings - provides 'and', 'or', 'not' keywords as macros</p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
+                    <code className="text-emerald-300 font-mono text-lg min-w-[120px] w-fit">stdalign.h</code>
                     <p className="text-emerald-200 text-base">Alignment specification - provides alignas and alignof for memory alignment (C11)</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
-                    <code className="text-emerald-300 font-mono text-lg min-w-[120px]">stdnoreturn.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-emerald-500/10 rounded-lg transition-all">
+                    <code className="text-emerald-300 font-mono text-lg min-w-[120px] w-fit">stdnoreturn.h</code>
                     <p className="text-emerald-200 text-base">Non-returning functions - provides noreturn specifier for functions that never return (C11)</p>
                   </div>
                 </div>
@@ -3093,12 +3109,12 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-6 mb-6">
                 <h3 className="text-2xl font-bold text-pink-300 mb-4">🧵 Thread & Atomic Libraries (C11)</h3>
                 <div className="space-y-3">
-                  <div className="flex items-start gap-4 p-3 hover:bg-pink-500/10 rounded-lg transition-all">
-                    <code className="text-pink-300 font-mono text-lg min-w-[120px]">threads.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-pink-500/10 rounded-lg transition-all">
+                    <code className="text-pink-300 font-mono text-lg min-w-[120px] w-fit">threads.h</code>
                     <p className="text-pink-200 text-base">Thread management - provides thrd_create, mtx_lock, cnd_wait for multithreading (C11)</p>
                   </div>
-                  <div className="flex items-start gap-4 p-3 hover:bg-pink-500/10 rounded-lg transition-all">
-                    <code className="text-pink-300 font-mono text-lg min-w-[120px]">stdatomic.h</code>
+                  <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4 p-3 hover:bg-pink-500/10 rounded-lg transition-all">
+                    <code className="text-pink-300 font-mono text-lg min-w-[120px] w-fit">stdatomic.h</code>
                     <p className="text-pink-200 text-base">Atomic operations - provides atomic types and operations for lock-free programming (C11)</p>
                   </div>
                 </div>
@@ -3107,8 +3123,8 @@ int main() {
               {/* Summary Table */}
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-8">
                 <h3 className="text-2xl font-bold text-center text-purple-300 mb-4">📋 Most Commonly Used Libraries</h3>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse">
+                <div className="overflow-x-auto custom-scrollbar">
+                  <table className="w-full border-collapse min-w-[600px]">
                     <thead>
                       <tr className="bg-purple-500/20">
                         <th className="border p-3 text-left text-purple-200 text-base">Library</th>
@@ -3942,7 +3958,7 @@ Pointer NULL - safe */`}
                 {/* Visual */}
                 <div className="mt-6 bg-black/40 rounded-xl p-5">
                   <div className="text-center text-amber-300 text-lg mb-3">Memory Layout</div>
-                  <div className="flex justify-center gap-4">
+                  <div className="flex flex-wrap justify-center items-center gap-4 overflow-x-auto custom-scrollbar pb-2">
                     <div className="bg-blue-600 rounded-lg p-3 text-center min-w-[100px]">
                       <div className="text-base text-blue-200">int rollNo</div>
                       <div className="text-2xl font-bold text-white">101</div>
@@ -4008,8 +4024,8 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center items-center gap-3">
-                      <div className="bg-blue-600 px-4 py-2 rounded text-lg">s1</div>
+                    <div className="flex flex-wrap justify-center items-center gap-3 overflow-x-auto custom-scrollbar pb-2">
+                      <div className="bg-blue-600 px-4 py-2 rounded text-base sm:text-lg">s1</div>
                       <div className="text-white text-2xl">.</div>
                       <div className="bg-green-600 px-4 py-2 rounded text-lg">rollNo</div>
                       <div className="text-white text-2xl">→</div>
@@ -4039,10 +4055,10 @@ printf("%d", p1.x); // Read value`}
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center items-center gap-3">
-                      <div className="bg-purple-600 px-4 py-2 rounded text-lg">ptr</div>
+                    <div className="flex flex-wrap justify-center items-center gap-3 overflow-x-auto custom-scrollbar pb-2">
+                      <div className="bg-purple-600 px-4 py-2 rounded text-base sm:text-lg">ptr</div>
                       <div className="text-white text-2xl">→</div>
-                      <div className="bg-blue-600 px-4 py-2 rounded text-lg">id: 101</div>
+                      <div className="bg-blue-600 px-4 py-2 rounded text-base sm:text-lg">id: 101</div>
                       <div className="text-white text-2xl">→</div>
                       <div className="bg-green-600 px-4 py-2 rounded text-lg">ptr-id = 101</div>
                     </div>
@@ -4072,7 +4088,7 @@ printf("%s", ptr->title);`}
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="bg-red-900/50 p-3 rounded text-center">
                         <div className="text-red-300 text-base">Without typedef</div>
                         <code className="text-white text-base">struct Student s1;</code>
@@ -4191,7 +4207,7 @@ int main() {
 
                 {/* Visual Comparison */}
                 <div className="bg-black/40 rounded-xl p-5">
-                  <div className="grid grid-cols-2 gap-6 text-center">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
                     <div>
                       <div className="text-blue-300 text-lg mb-2">Structure</div>
                       <div className="bg-blue-700 p-3 rounded">int a (4 bytes)</div>
@@ -4331,7 +4347,7 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center gap-2">
+                    <div className="flex flex-wrap justify-center items-center gap-2 overflow-x-auto custom-scrollbar pb-2">
                       {[0, 1, 2, 3, 4].map(i => (
                         <div key={i} className="bg-green-700 rounded p-2 text-center w-12">
                           <div className="text-white text-sm">?</div>
@@ -4380,7 +4396,7 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center gap-2">
+                    <div className="flex flex-wrap justify-center items-center gap-2 overflow-x-auto custom-scrollbar pb-2">
                       {[0, 1, 2, 3, 4].map(i => (
                         <div key={i} className="bg-green-700 rounded p-2 text-center w-12">
                           <div className="text-white text-sm">0</div>
@@ -4428,7 +4444,7 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center gap-2">
+                    <div className="flex flex-wrap justify-center items-center gap-2 overflow-x-auto custom-scrollbar pb-2">
                       {[10, 20, 30].map((v, i) => (
                         <div key={i} className="bg-blue-700 rounded p-2 text-center w-12">
                           <div className="text-white text-sm">{v}</div>
@@ -4486,7 +4502,7 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center items-center gap-4">
+                    <div className="flex flex-wrap justify-center items-center gap-4 overflow-x-auto custom-scrollbar pb-2">
                       <div className="bg-green-700 rounded p-3 text-center">
                         <div className="text-white">Allocated Memory</div>
                         <div className="text-sm text-green-300">ptr → 0x100</div>
@@ -4582,8 +4598,8 @@ int main() {
                 {/* Visual */}
                 <div className="mt-6 bg-black/40 rounded-xl p-5">
                   <div className="text-center text-slate-300 text-lg mb-3">File I/O Flow</div>
-                  <div className="flex justify-center items-center gap-4">
-                    <div className="bg-blue-600 px-4 py-2 rounded text-lg">Program</div>
+                  <div className="flex flex-wrap justify-center items-center gap-4 overflow-x-auto custom-scrollbar pb-2">
+                    <div className="bg-blue-600 px-4 py-2 rounded text-base sm:text-lg">Program</div>
                     <div className="text-white text-2xl">↔</div>
                     <div className="bg-green-600 px-4 py-2 rounded text-lg">FILE*</div>
                     <div className="text-white text-2xl">↔</div>
@@ -4638,7 +4654,7 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-8 mb-8">
                 <h3 className="text-4xl font-bold text-slate-300 mb-4">🔓 File Opening Modes</h3>
                 <div>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-4">
                     <div className="bg-blue-900/40 p-3 rounded text-center">
                       <code className="text-blue-300 text-lg">"r"</code>
                       <div className="text-gray-400 text-sm">Read only</div>
@@ -4953,8 +4969,8 @@ int main() {
 
                 {/* Visual */}
                 <div className="mt-6 bg-black/40 rounded-xl p-5">
-                  <div className="flex justify-center items-center gap-4">
-                    <div className="bg-blue-600 px-4 py-2 rounded text-lg">Source Code</div>
+                  <div className="flex flex-wrap justify-center items-center gap-4 overflow-x-auto custom-scrollbar pb-2">
+                    <div className="bg-blue-600 px-4 py-2 rounded text-base sm:text-lg">Source Code</div>
                     <div className="text-white text-2xl">→</div>
                     <div className="bg-purple-600 px-4 py-2 rounded text-lg">Preprocessor</div>
                     <div className="text-white text-2xl">→</div>
@@ -4973,12 +4989,12 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center gap-2">
-                      <div className="bg-blue-700 rounded p-2"><code className="text-white">#define PI 3.14159</code></div>
+                    <div className="flex flex-wrap justify-center items-center gap-2 overflow-x-auto custom-scrollbar pb-2">
+                      <div className="bg-blue-700 rounded p-2"><code className="text-white text-sm sm:text-base">#define PI 3.14159</code></div>
                       <div className="text-white text-2xl">→</div>
-                      <div className="bg-green-700 rounded p-2"><code className="text-white">area = PI * r * r</code></div>
+                      <div className="bg-green-700 rounded p-2"><code className="text-white text-sm sm:text-base">area = PI * r * r</code></div>
                       <div className="text-white text-2xl">→</div>
-                      <div className="bg-yellow-700 rounded p-2"><code className="text-white">area = 3.14159 * r * r</code></div>
+                      <div className="bg-yellow-700 rounded p-2"><code className="text-white text-sm sm:text-base">area = 3.14159 * r * r</code></div>
                     </div>
                   </div>
 
@@ -5016,12 +5032,12 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center gap-2">
-                      <div className="bg-blue-700 rounded p-2"><code className="text-white">#define SQUARE(x) ((x)*(x))</code></div>
+                    <div className="flex flex-wrap justify-center items-center gap-2 overflow-x-auto custom-scrollbar pb-2">
+                      <div className="bg-blue-700 rounded p-2"><code className="text-white text-sm sm:text-base">#define SQUARE(x) ((x)*(x))</code></div>
                       <div className="text-white text-2xl">→</div>
-                      <div className="bg-green-700 rounded p-2"><code className="text-white">SQUARE(5)</code></div>
+                      <div className="bg-green-700 rounded p-2"><code className="text-white text-sm sm:text-base">SQUARE(5)</code></div>
                       <div className="text-white text-2xl">→</div>
-                      <div className="bg-yellow-700 rounded p-2"><code className="text-white">((5)*(5)) = 25</code></div>
+                      <div className="bg-yellow-700 rounded p-2"><code className="text-white text-sm sm:text-base">((5)*(5)) = 25</code></div>
                     </div>
                   </div>
 
@@ -5056,7 +5072,7 @@ int main() {
                 <div>
                   <p className="text-blue-200 text-xl mb-4"><strong>Syntax:</strong> <code className="bg-black/50 px-3 py-1.5 rounded text-lg">#include &lt;header.h&gt;  or  #include "header.h"</code></p>
 
-                  <div className="grid grid-cols-2 gap-4 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                     <div className="bg-blue-900/40 rounded p-3">
                       <code className="text-blue-300 text-lg">&lt;header.h&gt;</code>
                       <p className="text-gray-400 text-sm mt-1">System headers • Searches system directories</p>
@@ -5092,7 +5108,7 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-8 mb-8">
                 <h3 className="text-4xl font-bold text-purple-300 mb-4">🔀 Conditional Compilation</h3>
                 <div>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-4">
                     <div className="bg-blue-900/40 p-2 rounded text-center">
                       <code className="text-blue-300 text-lg">#if</code>
                       <div className="text-gray-400 text-xs">Conditional test</div>
@@ -5223,7 +5239,7 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-8">
                 <h3 className="text-4xl font-bold text-purple-300 mb-4">🔖 Predefined Macros</h3>
                 <div>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-4">
                     <div className="bg-blue-900/40 p-2 rounded text-center">
                       <code className="text-blue-300 text-base">__LINE__</code>
                       <div className="text-gray-400 text-xs">Current line number</div>
@@ -5313,7 +5329,7 @@ int main() {
 
                 {/* Visual */}
                 <div className="mt-6 bg-black/40 rounded-xl p-5">
-                  <div className="flex justify-center gap-4">
+                  <div className="flex flex-wrap justify-center items-center gap-4 overflow-x-auto custom-scrollbar pb-2">
                     <div className="text-center">
                       <div className="text-amber-400 text-sm">Without enum</div>
                       <code className="text-white text-base">int day = 2; // Tuesday?</code>
@@ -5394,7 +5410,7 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center gap-2">
+                    <div className="flex flex-wrap justify-center items-center gap-2 overflow-x-auto custom-scrollbar pb-2">
                       <div className="bg-blue-700 rounded p-2 text-center">
                         <div className="text-white">switch(day)</div>
                         <div className="text-white">case MON: ...</div>
@@ -5446,7 +5462,7 @@ int main() {
                   <p className="text-blue-200 text-xl mb-4"><strong>Syntax:</strong> <code className="bg-black/50 px-3 py-1.5 rounded text-lg">typedef enum [ RED, GREEN, BLUE ]Color;</code></p>
 
                   {/* Visual */}
-                  <div className="grid grid-cols-2 gap-4 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                     <div className="bg-red-900/40 p-3 rounded text-center">
                       <div className="text-red-300 text-base">Without typedef</div>
                       <code className="text-white text-sm">enum Color c = RED;</code>
@@ -5511,8 +5527,8 @@ int main() {
 
                 {/* Visual */}
                 <div className="mt-6 bg-black/40 rounded-xl p-5">
-                  <div className="flex justify-center gap-4">
-                    <code className="text-white text-base">unsigned int</code>
+                  <div className="flex flex-wrap justify-center items-center gap-4 overflow-x-auto custom-scrollbar pb-2">
+                    <code className="text-white text-sm sm:text-base">unsigned int</code>
                     <div className="text-white text-2xl">→</div>
                     <code className="text-green-400 text-base">typedef unsigned int uint;</code>
                     <div className="text-white text-2xl">→</div>
@@ -5525,7 +5541,7 @@ int main() {
               <div className="bg-white/10 rounded-2xl backdrop-blur-md border border-white/10 p-8 mb-8">
                 <h3 className="text-4xl font-bold text-purple-300 mb-4">📝 typedef with Basic Types</h3>
                 <div>
-                  <div className="grid grid-cols-2 gap-3 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                     <div className="bg-blue-900/40 p-2 rounded">
                       <code className="text-blue-300 text-base">typedef unsigned int uint;</code>
                       <div className="text-gray-400 text-xs">Unsigned integer alias</div>
@@ -5581,7 +5597,7 @@ int main() {
                   <p className="text-blue-200 text-xl mb-4"><strong>Benefit:</strong> No need to write 'struct' keyword every time</p>
 
                   {/* Visual */}
-                  <div className="grid grid-cols-2 gap-4 mb-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                     <div className="bg-red-900/40 p-3 rounded text-center">
                       <div className="text-red-300 text-base">Without typedef</div>
                       <code className="text-white text-sm">struct Student s1;</code>
@@ -5711,12 +5727,12 @@ int main() {
 
                   {/* Visual */}
                   <div className="bg-black/40 rounded-xl p-4 mb-4">
-                    <div className="flex justify-center gap-2">
-                      <code className="text-white text-sm">int (*func)(int, int);</code>
+                    <div className="flex flex-wrap justify-center items-center gap-2 overflow-x-auto custom-scrollbar pb-2">
+                      <code className="text-white text-xs sm:text-sm">int (*func)(int, int);</code>
                       <div className="text-white text-2xl">→</div>
-                      <code className="text-green-400 text-sm">typedef int (*Operation)(int, int);</code>
+                      <code className="text-green-400 text-xs sm:text-sm">typedef int (*Operation)(int, int);</code>
                       <div className="text-white text-2xl">→</div>
-                      <code className="text-white text-sm">Operation add = &addition;</code>
+                      <code className="text-white text-xs sm:text-sm">Operation add = &addition;</code>
                     </div>
                   </div>
 
