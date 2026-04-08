@@ -1,9 +1,9 @@
-# ☕ Java Masterclass — Enhanced Edition
+# ☕ c Masterclass — Enhanced Edition
 
 ## Features
 - 📜 **22 Chapters** — Introduction to Interfaces
 - 🔊 **Voice Reader** — Click the purple button (bottom-right) to hear the content read aloud
-- 🤖 **Java Chatbot** — Click the green button (bottom-left) to ask Java questions
+- 🤖 **c Chatbot** — Click the green button (bottom-left) to ask c questions
 - 📺 **YouTube Resources** — Click "Resources" (top-right) for video tutorials
 - 📊 **Progress Bar** — Rainbow bar at the top shows how far you've scrolled
 - 🎨 **Animated Background** — Smooth color blobs that scroll with you
@@ -28,9 +28,9 @@ Then open: http://localhost:3000
 | Progress | Top | Rainbow progress bar |
 
 ## Chatbot Questions (Examples)
-- "What is Java?"
-- "What is OOP?"
+- "What is c?"
+- "What is Pointer?"
 - "What is a variable?"
-- "What is inheritance?"
+- "What is data type?"
 - "What is an array?"
-- "What is exception handling?"
+- "What is file handling?"
